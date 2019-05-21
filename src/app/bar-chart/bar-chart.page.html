@@ -11,6 +11,7 @@
   <ion-card class="chart-card">
     <google-chart #chart
       [title]="title"
+      (window:resize)="onResize($event)"
       [type]="type"
       [dynamicResize]="dynamicResize"
       [data]="data"

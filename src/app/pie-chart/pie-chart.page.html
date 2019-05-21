@@ -10,6 +10,7 @@
 <ion-content>
   <ion-card class="chart-card">
     <google-chart #chart
+      (window:resize)="onResize($event)"
       [title]="title"
       [type]="type"
       [dynamicResize]="dynamicResize"

@@ -24,12 +24,42 @@ export class BarChartPage implements OnInit {
       easing: 'out',
     }
   };
-  width = 550;
-  height = 400;
 
   constructor() { }
 
   ngOnInit() {
   }
 
+  ionViewWillEnter() {
+    console.log('ionViewWillEnter()');
+    this.drawChart();
+  }
+
+  onResize(event: Event) {
+    console.log('onResize(...)');
+    this.drawChart();
+  }
+
+  drawChart() {
+    console.log('drawChart()');
+
+    this.title = 'Google Bar Chart with Ionic 4';
+
+    this.type = 'BarChart';
+    this.dynamicResize = true;
+    this.data = [
+      ['2012', 900],
+      ['2013', 1000],
+      ['2014', 1170],
+      ['2015', 1250],
+      ['2016', 1530]
+    ];
+    this.columnNames = ['Year', 'Asia'];
+    this.options = {
+      animation: {
+        duration: 1000,
+        easing: 'out',
+      }
+    };
+  }
 }
