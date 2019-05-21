@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LineChartPage implements OnInit {
   title = 'Google Line Chart with Ionic 4';
-  
+
   constructor() { }
 
   ngOnInit() {

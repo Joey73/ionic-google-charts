@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DonutChartPage implements OnInit {
   title = 'Google Donut Chart with Ionic 4';
-  
+
   constructor() { }
 
   ngOnInit() {
