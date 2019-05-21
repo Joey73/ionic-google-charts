@@ -7,6 +7,8 @@ import { IonicModule } from '@ionic/angular';
 
 import { BarChartPage } from './bar-chart.page';
 
+import { GoogleChartsModule } from 'angular-google-charts';
+
 const routes: Routes = [
   {
     path: '',
@@ -17,6 +19,7 @@ const routes: Routes = [
 @NgModule({
   imports: [
     CommonModule,
+    GoogleChartsModule,
     FormsModule,
     IonicModule,
     RouterModule.forChild(routes)

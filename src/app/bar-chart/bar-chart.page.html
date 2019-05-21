@@ -9,5 +9,13 @@
 
 <ion-content>
   <ion-card class="chart-card">
+    <google-chart #chart
+      [title]="title"
+      [type]="type"
+      [dynamicResize]="dynamicResize"
+      [data]="data"
+      [columnNames]="columnNames"
+      [options]="options">
+    </google-chart>
   </ion-card>
 </ion-content>
