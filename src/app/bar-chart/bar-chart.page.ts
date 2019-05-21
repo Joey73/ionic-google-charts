@@ -18,7 +18,12 @@ export class BarChartPage implements OnInit {
     ['2016', 1530]
   ];
   columnNames = ['Year', 'Asia'];
-  options = { };
+  options = {
+    animation: {
+      duration: 1000,
+      easing: 'out',
+    }
+  };
   width = 550;
   height = 400;
 
