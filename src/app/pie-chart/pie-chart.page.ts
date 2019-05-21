@@ -19,7 +19,8 @@ export class PieChartPage implements OnInit {
   ];
   columnNames = ['Browser', 'Percentage'];
   options = {
-    colors: ['#e0440e', '#e6693e', '#ec8f6e', '#f3b49f', '#f6c7b6'], is3D: true
+    colors: ['#e0440e', '#e6693e', '#ec8f6e', '#f3b49f', '#f6c7b6'],
+    is3D: true
   };
 
   constructor() { }
